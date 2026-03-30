@@ -3,13 +3,15 @@ import logo from "../assets/logo.svg";
 import personImg from "../assets/person.svg";
 import starBg from "../assets/ani-bg.svg"; // purple splash shape
 import buttonBg from "../assets/button-bg.png";
+import circleIcon from "../assets/circle-icon.png";
+import circleIcon2 from "../assets/circle-icon-2.png"
 
 const AvatarHero = () => {
   return (
     <section className="w-full bg-[#FFE600] overflow-hidden relative">
       
       {/* Container */}
-      <div className="max-w-7xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 items-center gap-0">
+      <div className="max-w-7xl mx-auto px-4 py-12 md:pt-20 md:pb-12 grid md:grid-cols-2 items-center gap-0">
         
         {/* LEFT CONTENT */}
         <div className="text-center md:text-left z-10">
@@ -32,7 +34,7 @@ const AvatarHero = () => {
 
           {/* CTA */}
 <button
-  className="mt-6 mx-auto block text-white text-2xl px-8 py-4 rounded-md font-bold shadow-lg transition-all duration-300 bg-cover bg-center hover:scale-105"
+  className="mt-6 mx-auto block text-white text-3xl px-8 py-6 font-bold shadow-lg transition-all duration-300 bg-cover bg-center hover:scale-105"
   style={{
     backgroundImage: `url(${buttonBg})`,
   }}
@@ -60,14 +62,20 @@ const AvatarHero = () => {
           />
 
           {/* Decorative circle */}
-          <div className="absolute bottom-10 right-10 w-20 h-20 border border-white rounded-full opacity-70"></div>
-
+<img
+  src={circleIcon2}
+  alt="circle icon"
+  className="absolute -bottom-1 -left-[40rem] w-28 h-28 object-contain"
+/>      <div className="absolute bottom-44 left-0 w-3 h-3 bg-purple-600 rounded-full"></div>
         </div>
       </div>
 
       {/* Small floating dots */}
-      <div className="absolute top-10 left-1/2 w-4 h-4 bg-purple-600 rounded-full"></div>
-      <div className="absolute bottom-10 left-10 w-3 h-3 bg-purple-600 rounded-full"></div>
+<img
+  src={circleIcon}
+  alt="circle icon"
+  className="absolute -top-10 left-96 w-28 h-28 object-contain"
+/>      <div className="absolute -bottom-44 left-10 w-3 h-3 bg-purple-600 rounded-full"></div>
 
     </section>
   );
