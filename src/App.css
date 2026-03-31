@@ -16,4 +16,19 @@ button {
 p {
   font-family: 'AlbertSans-Light';
 }
+@font-face {
+  font-family: 'BigShoulders_36pt_bold';
+  src: url('../src/fonts/BigShoulders_60pt-ExtraBold.ttf') format('truetype');
+}
+.head{
+  font-family:'BigShoulders_36pt_bold' !important ;
+} 
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
